@@ -1,7 +1,7 @@
 import React from "react";
 import "./country1.css";
 
-const Country1 = ({ handleTextChange, background, translationBackground }) => {
+const Country1 = ({ handleTextChange, background, translationBackground, trashEraser }) => {
 
 
     return (
@@ -25,7 +25,7 @@ const Country1 = ({ handleTextChange, background, translationBackground }) => {
         
         }}>
                 <textarea maxLength="1024" className="input1" placeholder="Enter your text here" onChange={handleTextChange}>
-                
+                    <img className="trashEraser" src={trashEraser} alt="eraser"></img>
                 </textarea>
             </div>
         </div>
